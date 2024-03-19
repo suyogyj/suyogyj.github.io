@@ -26,7 +26,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "suyogyj.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: suyogj13
 github_username:  suyogyj
-
+author:
+  name     : "Suyog Joshi"
+  avatar   : "/assets/images/bio-photo.jpg"
+  bio      : "My awesome biography constrained to a sentence or two goes here."
+  location : "Somewhere, USA"
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "dark"
@@ -42,6 +46,14 @@ defaults:
     values:
       read_time: true
       show_date: true
+      layout: single
+      share: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
 
 # Exclude from processing.
 # The following items will not be processed, by default.
